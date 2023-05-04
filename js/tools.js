@@ -8,14 +8,13 @@ export function checkLogin() {
     return value;
   }
   let isLogin = getIsLogin("isLogin", false);
-  const pathname = window.location.pathname;
-  console.log(window.location);
-  if (pathname.includes("/login.html")) {
-    if (isLogin) {
+  const href = window.location.href;
+  if (isLogin) {
+    if (href.includes("login.html")) {
       window.location.replace("index.html");
     }
   } else {
-    if (isLogin == false) {
+    if (!href.includes("login.html")) {
       window.location.replace("login.html");
     }
   }
