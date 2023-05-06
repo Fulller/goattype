@@ -1,3 +1,5 @@
+import { checkLogin } from "./tools.js";
+checkLogin();
 function showHidePassword() {
   var x = document.getElementById("password");
   console.log(x);
