@@ -29,12 +29,10 @@ function register() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
   var repassword = document.getElementById("repassword").value;
-  var gender = document.getElementById("gender").value;
   if (password == repassword) {
     var user = {
       username: username,
       password: password,
-      gender: gender,
     };
     var json = JSON.stringify(user);
     localStorage.setItem(username, json);

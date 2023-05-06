@@ -146,17 +146,17 @@ button {
 .material-symbols-outlined {
   position: absolute;
   left: 85%;
-  top: 32%;
+  top: 35.25%;
 }
 .password i {
   position: absolute;
   left: 85%;
-  top: 47.75%;
+  top: 52.75%;
 }
 .repassword i {
   position: absolute;
   left: 85%;
-  top: 63%;
+  top: 70%;
 }
 .gender {
   font-size: 15px;
@@ -192,17 +192,17 @@ div#login {
   .material-symbols-outlined {
     position: absolute;
     left: 90%;
-    top: 30%;
+    top: 33.5%;
   }
   .password i {
     position: absolute;
     left: 90%;
-    top: 47.5%;
+    top: 53%;
   }
   .repassword i {
     position: absolute;
     left: 90%;
-    top: 64%;
+    top: 72%;
   }
   .shape:first-child {
     left: -70px;
