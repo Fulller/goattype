@@ -1,8 +1,3 @@
-import { checkLogin } from "./tools.js";
-
-// checkLogin();
-localStorage.setItem("isLogin", true);
-
 function showHidePassword() {
   var x = document.getElementById("password");
   console.log(x);
