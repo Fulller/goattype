@@ -1,6 +1,7 @@
 import { checkLogin } from "./tools.js";
 
-checkLogin();
+// checkLogin();
+localStorage.setItem("isLogin", true);
 
 function showHidePassword() {
   var x = document.getElementById("password");
@@ -22,6 +23,8 @@ function login() {
   var password = document.getElementById("password").value;
   var user = localStorage.getItem(username);
   var data = JSON.parse(user);
+  console.log("do");
+
   if (user == null) {
     alert("You don't have an account yet, please register!");
   } else if (username == data.username && password == data.password) {
