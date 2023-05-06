@@ -1,7 +1,3 @@
-import { checkLogin } from "./tools.js";
-checkLogin();
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
 function showHidePassword() {
   var x = document.getElementById("password");
   console.log(x);
@@ -15,8 +11,17 @@ function showHidePassword() {
     document.querySelector(".fa").classList.add("fa-eye-slash");
   }
 }
-$("#login-btn").onclick = function (e) {
-  e.preventDefault();
-  localStorage.setItem("isLogin", true);
-  window.location.replace("index.html");
-};
+
+function login() {
+  event.preventDefault();
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var user = localStorage.getItem(username);
+  var data = JSON.parse(user);
+  if (user == null) {
+    alert("You don't have an account yet, please register!");
+  } else if (username == data.username && password == data.password) {
+    localStorage.setItem("isLogin", true);
+    window.location.href = "./index.html";
+  } else alert("Username or password is incorrect");
+}

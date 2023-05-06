@@ -28,10 +28,32 @@
   -ms-user-select: none;
   user-select: none;
   outline: none;
+  text-decoration: none;
 }
 img {
   object-fit: cover;
 }
 ul {
   list-style-type: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: var(--sub-color);
+  transition: all 0.5s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color);
 }

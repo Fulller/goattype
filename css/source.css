@@ -2,6 +2,9 @@ body {
   background-color: var(--bg-color);
   padding: 32px;
 }
+a {
+  text-decoration: none;
+}
 #container {
   display: flex;
   flex-direction: column;
